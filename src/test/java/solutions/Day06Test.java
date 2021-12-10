@@ -8,22 +8,14 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Day01Test {
-  Day01 underTest;
-  String input = "199\n"
-      + "200\n"
-      + "208\n"
-      + "210\n"
-      + "200\n"
-      + "207\n"
-      + "240\n"
-      + "269\n"
-      + "260\n"
-      + "263";
+public class Day06Test {
+
+  private Day06 underTest;
+  private String input = "3,4,3,1,2";
 
   @BeforeMethod
   public void setup() {
-    underTest = new Day01();
+    underTest = new Day06();
   }
 
   @Test
@@ -31,7 +23,7 @@ public class Day01Test {
     List<String> inputs = splitByNewLine(input);
     String result = underTest.part1(inputs);
 
-    Assert.assertEquals(result, "7");
+    Assert.assertEquals(result, "5934");
   }
 
   @Test
@@ -39,7 +31,6 @@ public class Day01Test {
     List<String> inputs = splitByNewLine(input);
     String result = underTest.part2(inputs);
 
-    Assert.assertEquals(result, "5");
+    Assert.assertEquals(result, null);
   }
-
 }
