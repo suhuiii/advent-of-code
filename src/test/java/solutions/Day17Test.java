@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class Day17Test {
 
   private Day17 underTest;
-  private String input = "";
+  private String input = "target area: x=20..30, y=-10..-5";
 
   @BeforeMethod
   public void setup() {
@@ -23,7 +23,7 @@ public class Day17Test {
     List<String> inputs = splitByNewLine(input);
     String result = underTest.part1(inputs);
 
-    Assert.assertEquals(result, null);
+    Assert.assertEquals(result, "45");
   }
 
   @Test
@@ -31,6 +31,6 @@ public class Day17Test {
     List<String> inputs = splitByNewLine(input);
     String result = underTest.part2(inputs);
 
-    Assert.assertEquals(result, null);
+    Assert.assertEquals(result, "112");
   }
 }
